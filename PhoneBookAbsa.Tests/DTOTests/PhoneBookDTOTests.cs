@@ -14,6 +14,15 @@ namespace PhoneBookAbsa.Tests.DTOTests
 
             Assert.Equal(pb.Id, pbDTO.Id);
             Assert.Equal(pb.Name, pbDTO.Name);
+            Assert.Equal(pb.Entries.Count, pbDTO.Entries.Count);
+
+            foreach (Entry e in pb.Entries)
+            {
+                var eDTO = pbDTO.Entries.Where(eDTO => eDTO.Id == e.Id).FirstOrDefault();
+                Assert.NotNull(eDTO);
+                Assert.Equal(e.Name, eDTO.Name);
+                Assert.Equal(e.PhoneNumber, eDTO.PhoneNumber);
+            }
         }
 
         public class PhoneBookTestData : IEnumerable<object[]>
@@ -21,12 +30,20 @@ namespace PhoneBookAbsa.Tests.DTOTests
             public IEnumerator<object[]> GetEnumerator()
             {
                 var r = (new Random()).Next(100);
-                var pb = new PhoneBook
+                var entries = new List<Entry>();
+                for (int i = 1; i <= r; i++)
                 {
-                    Id = r,
-                    Name = r.ToString()
-                };
-                
+                    entries.Add(new Entry(
+                        id: i,
+                        name: i.ToString(),
+                        phoneNumber: (i * 100).ToString()));
+                }
+                var pb = new PhoneBook(
+                    id: r,
+                    name: r.ToString(),
+                    entries: entries
+                );
+               
 
                 yield return new object[] { pb };
                 yield return new object[] { new PhoneBook() };
