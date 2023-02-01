@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{60ACEDA7-38D4-4525-90F9-81199EE3A1C8}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PhoneBookAbsa.Tests/ControllerTests/PhoneBookControllerTests.cs">
+    <Files>
+      <File FileName="PhoneBookAbsa.Tests/ControllerTests/PhoneBookControllerTests.cs" Line="28" Column="37" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="phone-book-absa" expanded="True">
+            <Node name="PhoneBookAbsa" expanded="True" />
+            <Node name="PhoneBookAbsa.Tests" expanded="True">
+              <Node name="ControllerTests" expanded="True">
+                <Node name="PhoneBookControllerTests.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="phone-book-absa" expanded="True">
+            <Node name="PhoneBookAbsa.Tests" expanded="True">
+              <Node name="PhoneBookAbsa.Tests.ControllerTests" expanded="True">
+                <Node name="PhoneBookControllerTests" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PhoneBookAbsa PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

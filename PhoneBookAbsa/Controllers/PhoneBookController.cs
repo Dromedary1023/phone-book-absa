@@ -16,7 +16,7 @@ namespace PhoneBookAbsa.Controllers
         }
 
         [HttpGet]
-        public async Task <ActionResult<List<PhoneBookDTO>>> Get()
+        public async Task<List<PhoneBookDTO>> Get()
         {
             var phoneBooks = await _phoneBookRepository.ListAsync();
             var phoneBookDTOs = new List<PhoneBookDTO>();
@@ -25,7 +25,7 @@ namespace PhoneBookAbsa.Controllers
                 phoneBookDTOs.Add(new PhoneBookDTO(pb));
             }
 
-            return Ok(phoneBookDTOs);
+            return phoneBookDTOs;
         }
     }
 }

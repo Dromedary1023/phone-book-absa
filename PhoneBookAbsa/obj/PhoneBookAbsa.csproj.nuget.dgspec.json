@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/shoaib/dev/phone-book/phone-book-absa/PhoneBookAbsa/PhoneBookAbsa.csproj": {}
+    "/Users/shoaib/dev/phone-book/PhoneBookAbsa/PhoneBookAbsa.csproj": {}
   },
   "projects": {
-    "/Users/shoaib/dev/phone-book/phone-book-absa/PhoneBookAbsa/PhoneBookAbsa.csproj": {
+    "/Users/shoaib/dev/phone-book/PhoneBookAbsa/PhoneBookAbsa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shoaib/dev/phone-book/phone-book-absa/PhoneBookAbsa/PhoneBookAbsa.csproj",
+        "projectUniqueName": "/Users/shoaib/dev/phone-book/PhoneBookAbsa/PhoneBookAbsa.csproj",
         "projectName": "PhoneBookAbsa",
-        "projectPath": "/Users/shoaib/dev/phone-book/phone-book-absa/PhoneBookAbsa/PhoneBookAbsa.csproj",
+        "projectPath": "/Users/shoaib/dev/phone-book/PhoneBookAbsa/PhoneBookAbsa.csproj",
         "packagesPath": "/Users/shoaib/.nuget/packages/",
-        "outputPath": "/Users/shoaib/dev/phone-book/phone-book-absa/PhoneBookAbsa/obj/",
+        "outputPath": "/Users/shoaib/dev/phone-book/PhoneBookAbsa/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/shoaib/.nuget/NuGet/NuGet.Config"

@@ -1,3 +1,4 @@
+using System.Collections;
 using PhoneBookAbsa.DTOs;
 using PhoneBookAbsa.Models;
 
@@ -5,19 +6,33 @@ namespace PhoneBookAbsa.Tests.DTOTests
 {
     public class PhoneBookDTOTests
     {
-        [Fact]
-        public void PhoneBookConversion()
+        [Theory]
+        [ClassData(typeof(PhoneBookTestData))]
+        public void PhoneBookConversion(PhoneBook pb)
         {
-            var pb = new PhoneBook
-            {
-                Id = 1,
-                Name = "Test",
-            };
-
             var pbDTO = new PhoneBookDTO(pb);
 
-            Assert.Equal(1, pbDTO.Id);
-            Assert.Equal("Test", pbDTO.Name);
+            Assert.Equal(pb.Id, pbDTO.Id);
+            Assert.Equal(pb.Name, pbDTO.Name);
+        }
+
+        public class PhoneBookTestData : IEnumerable<object[]>
+        {
+            public IEnumerator<object[]> GetEnumerator()
+            {
+                var r = (new Random()).Next(100);
+                var pb = new PhoneBook
+                {
+                    Id = r,
+                    Name = r.ToString()
+                };
+                
+
+                yield return new object[] { pb };
+                yield return new object[] { new PhoneBook() };
+            }
+
+            IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
         }
     }
 }
